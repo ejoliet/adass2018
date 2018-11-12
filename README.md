@@ -56,5 +56,6 @@ fc.show_fits(fval)
 ```
 
 #notebook
-```jupyter notebook
- ```
+```
+jupyter notebook
+```

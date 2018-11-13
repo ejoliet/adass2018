@@ -44,7 +44,7 @@ function loadSIA() {
 ### HIPS: 
 SDSS, dss, allwise, 2mass + ivo:// url from here https://irsa.ipac.caltech.edu/data/hips/list
 
-more here http://aladin.u-strasbg.fr/java/nph-aladin.pl?frame=aladinHpxList
+more here [IRSAViewer](https://irsa.ipac.caltech.edu/irsaviewer)
 
 ### Dev
 MOC

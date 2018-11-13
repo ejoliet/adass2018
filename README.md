@@ -1,6 +1,6 @@
 # Firefly in IRSA (ADASS2018)
 
-Scratch notes to copy/paste examplesduring foucs demo ADASS XXVII, 11/13/2018.
+Scratch notes to copy/paste examples URLs during focus demo ADASS XXVII, 11/13/2018.
 (For localhost example, please clone [Firefly](https://github.com.Caltech-IPAC/Firefly) and build/deploy ```gradle :firefly:bAD```
 Then demos are here: http://localhost:8080/firefly/demo/ffapi-*.html
 

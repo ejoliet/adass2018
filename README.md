@@ -8,7 +8,9 @@ Then demos are here: http://localhost:8080/firefly/demo/ffapi-*.html
 
 ### Lightcurve
 
-m109 light curve wise: https://irsa.ipac.caltech.edu/workspace/TMP_fd7GHO_4548/Gator/irsa/4602/tbview.html
+[Gator m109 on WISE Multiepoch photo](https://irsa.ipac.caltech.edu/cgi-bin/Gator/nph-query?catalog=allwise_p3as_mep&spatial=cone&radius=20&radunits=arcsec&objstr=11h57m35.98s+53d22m28.3s)
+
+m109 light curve wise result: https://irsa.ipac.caltech.edu/workspace/TMP_fd7GHO_4548/Gator/irsa/4602/tbview.html
 
 
 ### Finder Chart

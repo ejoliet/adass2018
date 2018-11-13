@@ -41,8 +41,10 @@ function loadSIA() {
         }
 ```
 
-### HIPS: 
+### HiPS: 
 SDSS, dss, allwise, 2mass + ivo:// url from here https://irsa.ipac.caltech.edu/data/hips/list
+
+[Show six HiPS in one](http://localhost:8080/firefly/demo/six.html)
 
 more here [IRSAViewer](https://irsa.ipac.caltech.edu/irsaviewer)
 

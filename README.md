@@ -6,12 +6,19 @@ Then demos are here: http://localhost:8080/firefly/demo/ffapi-*.html
 
 ## DEMO
 
+### Searching datasets Brushing/Linking
+
+Search with [IRSAviewer](https://irsa.ipac.caltech.edu/irsaviewer/)
+
+WISE search 300" around Pleiades, m109, or favorite object
+
+I can save table, highlight rows, filter, add footprint, change hips, fits when zoom in/out
+
 ### Lightcurve
 
-Search via Gator m109 [on WISE Multiepoch photo](https://irsa.ipac.caltech.edu/cgi-bin/Gator/nph-query?catalog=allwise_p3as_mep&spatial=cone&radius=20&radunits=arcsec&objstr=11h57m35.98s+53d22m28.3s)
+Search via Gator m109, 20" [on WISE Multiepoch photo](https://irsa.ipac.caltech.edu/cgi-bin/Gator/nph-query?catalog=allwise_p3as_mep&spatial=cone&radius=20&radunits=arcsec&objstr=11h57m35.98s+53d22m28.3s)
 
 m109 light curve wise result: https://irsa.ipac.caltech.edu/workspace/TMP_fd7GHO_4548/Gator/irsa/4602/tbview.html
-
 
 ### Finder Chart
 https://irsa.ipac.caltech.edu/onlinehelp/finderchart/#id=api

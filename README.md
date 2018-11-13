@@ -47,9 +47,7 @@ SDSS, dss, allwise, 2mass + ivo:// url from here https://irsa.ipac.caltech.edu/d
 more here [IRSAViewer](https://irsa.ipac.caltech.edu/irsaviewer)
 
 ### Dev
-MOC
-Footprint
-Slate
+[MOC, Footprint](http://localhost:8080/firefly/), [Slate](http://localhost:8080/firefly/demo/ffapi-slate-test2.html)
 
 ### Demo python:
 - install FF client for python

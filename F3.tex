@@ -1,0 +1,113 @@
+% super simple template for automated 2018 ADASS manuscript generation from the registration entry
+% most comments have been removed, see the ADASS_template.tex for a fully commented version
+
+% Version 22-nov-2018 (Peter Teuben)
+
+\documentclass[11pt,twoside]{article}
+\usepackage{asp2014}
+\usepackage{graphicx}
+
+\aspSuppressVolSlug
+\resetcounters
+
+\bibliographystyle{asp2014}
+
+\markboth{Joliet, and Wu}{Visualization in IRSA Services using Firefly}      % remove/add authors as you need
+
+\begin{document}
+
+\title{Visualization in IRSA Services using Firefly}
+
+
+\author{Emmanuel~Joliet, and Xiuqin~Wu$^1$}
+\affil{$^1$IPAC/Caltech, Pasadena, CA, USA; \email{ejoliet@ipac.caltech.edu, xiuqin@ipac.caltech.edu}}
+% remove/add authors as you need
+
+
+\paperauthor{Emmanuel~Joliet}{ejoliet@ipac.caltech.edu}{}{California Institute of Technology}{IPAC}{Pasadena}{California}{91125}{USA}
+% remove/add authors as you need
+\paperauthor{Xiuqin~Wu}{xiuqin@ipac.caltech.edu}{}{California Institute of Technology}{IPAC}{Pasadena}{California}{91125}{USA}
+
+% leave these next few aindex lines commented for the editors to enable them
+%\aindex{Joliet,~E.}
+%\aindex{Coauthor,~A.}          % remove and add as you need
+
+\begin{abstract}
+
+NASA/IPAC Infrared Science Archive (IRSA) curates the science products of NASA's infrared and submillimeter missions, including many large-area and all-sky surveys. IRSA offers access to digital archives through powerful query engines (including VO-compliant interfaces) and offers unique data analysis and visualization tools. IRSA exploits a re-useable architecture to deploy cost-effective archives, including 2MASS, Spitzer, WISE, Planck, and a large number of highly-used contributed data products from a diverse set of astrophysics projects.
+
+Firefly is IPAC's Advanced Astronomy WEB UI Framework. It was  open sourced in 2015, hosted at GitHub. Firefly is designed for building a web-based front end to access science archives  with advanced data visualization capabilities.The visualization provide user with an integrated experience with brushing and linking capabilities among images, catalogs, and plots.  Firefly has been used in many IPAC IRSA applications, in LSST Science Platform Portal, and in NED’s newly released interface.
+
+In this focus demo, we will show case many data access interfaces and services provided by IRSA based on Firefly. It will demonstrate the reusability of Firefly in query, data display, and its visualization capabilities, including the newly released features of HiPS images display, MOC overlay, and the interactions between all those visualization components.
+
+\end{abstract}
+
+\section{Introduction}
+
+Archives are data driven end points which care mostly of curating, maintaning and making avaliable reliably and as much as possible without interuption science data.
+Nowdays, network and internet is the main access and so UI and GUIs together with friendly APIs are the go-to tools for users
+
+IRSA hosts more than 1PB of data from over 15 projects. It enable data extraction, exploration and visualization which required software developpement and maintenance (as well as hardware) for long-term persistence and availability.
+User experience (UX) learning curve is faster when User interfaces (UI) are consistent across websites.
+Best Software engineering (Scrum) rules and practices are put in place for such endeavor and growing challenges.
+Backend API are best companions to UI and are build behind for easy direct or internal access (i.e. VO protocols).
+
+A simple view of archive access from internet clients is displayed bewlow.
+
+% \image{F3-intro-schema1.png}
+% \begin{figure}[!t]
+% \begin{center}
+% \includegraphics[bb=0 0 900 450]{F3-intro-schema1.png}
+% \end{center}
+% \caption{Archive clients/servers schema}
+% \label{Fig:intro}
+% \end{figure}
+
+
+
+\section{Challenges}
+
+Archive data usually can be retrieve and displayed as images, charts and tables.
+Interactivity and interconnectivity is a must in order to allow useful exploration and extraction.
+Always pursuing a "user friendly" access is key for enabling data exploration accross different projects.
+Increasing data volume and complicated use cases are challenges that could be overcome by relying on services running closer to the data, with
+reusable and derived components across different projects and datasets.
+
+Many projects in IPAC either  use Firefly  in application or use Firefly API for displays.
+They are WISE \footnote{\url{http://irsa.ipac.caltech.edu/applications/wise/}},
+Herschel \footnote{\url{http://irsa.ipac.caltech.edu/applications/Herschel/}}, 
+Finder Chart \footnote{\url{http://irsa.ipac.caltech.edu/applications/finderchart/}}, 
+IRSA Catalog Search \footnote{\url{http://irsa.ipac.caltech.edu/applications/Gator/}}, 
+IRSA Viewer \footnote{\url{http://irsa.ipac.caltech.edu/irsaviewer/}}, 
+NED \footnote{\url{http://ned.ipac.caltech.edu}}. 
+
+Using Firefly as a base provided a familiar look and feel to users, and allow all the projects to share the new features added to Firefly, like the most recent new feature of HiPS images display and MOC overlay. 
+
+Figure \ref{figure1} "Firefly, IRSA catalog search" give two images. They are Firefly displaying a catalog entries on an image, color-color plot, and histogram, 
+IRSA catalog search result display using Firefly API. 
+\articlefiguretwo{ff.eps}{gator.eps}{figure1}{Firefly, IRSA catalog search}
+
+Figure \ref{figure2} "WISE image service, Firefly" give two images. They are WISE image service to display multiple images for WISE, and XXXX
+\articlefiguretwo{wise.eps}{ff.eps}{figure2}{WISE image service, Firefly}
+
+
+\smallskip
+\smallskip
+
+
+\acknowledgements
+
+The Firefly softwaer is based upon work supported in part by the National
+Science Foundation through Cooperative Support Agreement (CSA) Award No. AST-1227061 under Governing
+Cooperative Agreement 1258333 managed by the Association of Universities for Research in Astronomy (AURA), and
+the Department of Energy under Contract No. DEAC02-76SF00515 with the SLAC National Accelerator Laboratory.
+Additional LSST funding comes from private donations, grants to universities, and in-kind support from LSSTC
+Institutional Members.
+
+\smallskip
+The applications mentioned were supported by IRSA, the NASA/IPAC Infrared Science Archive. IRSA curates the science
+products of NASA's infrared and submillimeter missions, including many large-area and all-sky surveys, and NED the NASA/IPAC Extragalactic Database.
+
+\bibliography{example}  % For BibTex
+
+\end{document}

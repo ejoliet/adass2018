@@ -121,7 +121,7 @@ We will continue the effort to adopt modern web technology to enable richer feat
 
 
 
-\section{Demo outline}
+\section{Demo reference}
 
 A demo with step by step tutorial has been put togther in github\footnote{\url{https://github.com/ejoliet/adass2018}}.
 The tutorial should cover the following concepts:
@@ -134,76 +134,9 @@ The tutorial should cover the following concepts:
   \item API html integration: Atlas, Herschel or NED
   \item IRSA Finder Chart application
   \item Python integration
-  \item In development: MOC, new Footprint tool
+  \item Glimpse of new development: MOC, new Footprint tool
 \end{itemize}
 \smallskip
-Step by step as follow:
-
-Brushing/Linking example with Time Series tool
-\begin{enumerate}
-  \item WISE light-curve search (Gator \url{https://irsa.ipac.caltech.edu/applications/Gator/})
-  \item Save table (via IRSA workspace) and Upload to Time Series tool
-  \item Or Launch to Time Series tool
-  \item See periodogram
-  \item HTML format axis label\footnote{log(<em>v</em> [Hz])<br>See docs <a href="\url{https://ui.adsabs.harvard.edu/\#abs/1999AJ....118.2561G/abstract}">here</a>}
-\end{enumerate}
-\smallskip
-HIPs: Discover or Catalog search with IV
-
-\begin{enumerate}
-  \item See HIPs, change to others
-  \item Plot error bars, new column based on new math. Expression (WISE color color)
-  \item Add by URL or ivo://, see here hips servers \url{http://aladin.u-strasbg.fr/java/nph-aladin.pl?frame=aladinHpxList}
-\end{enumerate}
-
-
-API: Herschel, Atlas, NED...
-\begin{enumerate}
-  \item Search Herschel, see coverage footprint
-  \item Launch image viewer
-  \item Show NED integration of FinderChart/IRSAViewer
-  \item See SIA search URL used in example under 'demo' folder, url sample here: \url{https://irsa.ipac.caltech.edu/docs/irsa_image_server.html}
-\end{enumerate}
-\smallskip
-Finder Chart, and API mode: \url{https://irsa.ipac.caltech.edu/onlinehelp/finderchart/#id=api}
-In development:
-
-\begin{enumerate}
-  \item Release soon: MOC, footprint enhanced
-  \item Future:  demo with 'slate' with 3D chart and custom layout
-\end{enumerate}
-\smallskip
-Python / Jupyter notebook
-
-\begin{enumerate}
-  \item run in CLI:
-\begin{verbatim}
-  > git clone https://github.com/Caltech-IPAC/firefly_client.git
-  > cd firefly_client/
-  > pip install -e .
-  > wget http://web.ipac.caltech.edu/staff/roby/demo/2mass-m31-green.fits
-  > wget http://web.ipac.caltech.edu/staff/roby/demo/m31-2mass-2412-row.tbl
-  > python # to enter in python console, see next
-\end{verbatim}
-
-\begin{verbatim}
-# in python console, import files and launch viewer (see docs):
- > from firefly_client import FireflyClient
- > fc = FireflyClient('https://irsa.ipac.caltech.edu/irsaviewer')
-
-# show image
- > fval = fc.upload_file('2mass-m31-green.fits')
- > fc.show_fits(fval)
-
-# display table
-  > tval = fc.upload_file('m31-2mass-2412-row.tbl')
-  > fc.show_table(tval)
-\end{verbatim}
-\item Notebook, run in CLI and see notebook under ./examples\footnote{\url{https://github.com/Caltech-IPAC/firefly_client/tree/master/examples}}:
-\begin{verbatim}
-  > jupyter notebook
-\end{verbatim}
-\end{enumerate}
 
 \acknowledgements
 

@@ -75,12 +75,14 @@ fc = FireflyClient('https://irsa.ipac.caltech.edu/irsaviewer')
 fc.launch_browser()
 ```
 #show image
-```fval = fc.upload_file('2mass-m31-green.fits')
+```
+fval = fc.upload_file('2mass-m31-green.fits')
 fc.show_fits(fval)
 ```
 
 #display table
-``` tval = fc.upload_file('m31-2mass-2412-row.tbl')
+```
+tval = fc.upload_file('m31-2mass-2412-row.tbl')
    fc.show_table(tval)
 ```
 

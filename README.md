@@ -24,8 +24,8 @@ m109 light curve wise result: https://irsa.ipac.caltech.edu/workspace/TMP_fd7GHO
 https://irsa.ipac.caltech.edu/onlinehelp/finderchart/#id=api
 
 ### API usage: NED, ATLAS, Herchel, etc
-- docs file:///Users/ejoliet/projects/firefly/build/firefly/war/docs/js/index.html
-    - gradle :buildJsDoc
+- docs: file:///Users/ejoliet/projects/firefly/build/firefly/war/docs/js/index.html
+    - gradle :firefly:buildJsDoc
 - See Atlas example, show page source
     - https://irsa.ipac.caltech.edu/data/SPITZER/Abell1763/
 - NED: API + IRSAViewer usage

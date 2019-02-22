@@ -72,6 +72,7 @@ more here [IRSAViewer](https://irsa.ipac.caltech.edu/irsaviewer)
 ```
 from firefly_client import FireflyClient
 fc = FireflyClient('https://irsa.ipac.caltech.edu/irsaviewer')
+fc.launch_browser()
 ```
 #show image
 ```fval = fc.upload_file('2mass-m31-green.fits')
